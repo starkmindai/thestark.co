@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARK | Ideas at the intersection of technology, art, and identity</title>
+    <meta name="description" content="STARK is the creative home of Loni and Clinton Stark — building at the intersection of enterprise technology, psychology, and art.">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thestark.co/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="STARK | Technology, Art, Identity">
+    <meta property="og:description" content="Ideas at the intersection of technology, art, and identity. Home of Stark Insider, StarkMind, and Atelier Stark.">
+    <meta property="og:site_name" content="STARK">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thestark.co/">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-color: #0a0a0a;
+            --surface-color: #141414;
+            --text-color: #e8e8e8;
+            --text-muted: #888;
+            --accent-color: #c8553d;
+            --font-heading: 'Cormorant Garamond', Georgia, serif;
+            --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            font-size: 16px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        header {
+            padding: 6rem 2rem 4rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: var(--font-heading);
+            font-size: 4rem;
+            font-weight: 400;
+            letter-spacing: 0.3em;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+
+        header .tagline {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 300;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* Main content */
+        main {
+            flex: 1;
+            padding: 2rem 0 4rem;
+        }
+
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            margin-bottom: 2rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+
+        /* Brand cards */
+        .brands {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .brand-card {
+            background: var(--surface-color);
+            padding: 2rem;
+            border-left: 3px solid transparent;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .brand-card:hover {
+            border-left-color: var(--accent-color);
+            transform: translateX(4px);
+        }
+
+        .brand-card h3 {
+            font-family: var(--font-heading);
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .brand-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+
+        .brand-card .arrow {
+            display: inline-block;
+            margin-left: 0.5rem;
+            opacity: 0;
+            transform: translateX(-4px);
+            transition: all 0.3s ease;
+        }
+
+        .brand-card:hover .arrow {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Summit card - special treatment */
+        .brand-card.summit {
+            background: linear-gradient(135deg, var(--surface-color) 0%, #1a1412 100%);
+        }
+
+        .brand-card.summit .date {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            margin-top: 0.75rem;
+            font-weight: 500;
+        }
+
+        /* About section */
+        .about {
+            border-top: 1px solid #222;
+            padding-top: 3rem;
+            margin-top: 4rem;
+        }
+
+        .about p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            max-width: 600px;
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.5rem;
+                letter-spacing: 0.2em;
+            }
+
+            header {
+                padding: 4rem 1.5rem 3rem;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .brand-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>STARK</h1>
+        <p class="tagline">Ideas at the intersection of technology, art, and identity.</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <section>
+                <h2>What We Build</h2>
+                <div class="brands">
+                    <a href="https://www.starkinsider.com" class="brand-card" target="_blank" rel="noopener">
+                        <h3>Stark Insider <span class="arrow">&rarr;</span></h3>
+                        <p>Long-form writing on technology, culture, and creativity. Since 2009.</p>
+                    </a>
+
+                    <a href="https://starkmind.ai" class="brand-card" target="_blank" rel="noopener">
+                        <h3>StarkMind <span class="arrow">&rarr;</span></h3>
+                        <p>A laboratory for human-AI collaboration, exploring questions about identity and meaning.</p>
+                    </a>
+
+                    <a href="https://atelierstark.com" class="brand-card" target="_blank" rel="noopener">
+                        <h3>Atelier Stark <span class="arrow">&rarr;</span></h3>
+                        <p>Art in painting, sculpture, and writing, examining identity and transformation.</p>
+                    </a>
+
+                    <a href="https://starkmind.ai/summit.html" class="brand-card summit" target="_blank" rel="noopener">
+                        <h3>The Third Mind Summit <span class="arrow">&rarr;</span></h3>
+                        <p>Where humans and AI agents collaborate as co-presenters.</p>
+                        <p class="date">Loreto, Mexico · December 2025</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="about">
+                <h2>About</h2>
+                <p>STARK is the creative home of Loni and Clinton Stark — a space for building at the intersection of enterprise technology, psychology, and art.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 STARK</p>
+    </footer>
+
+</body>
+</html>
